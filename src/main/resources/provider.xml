@@ -17,4 +17,6 @@
 		<dubbo:service interface="com.ping.service.UserService" ref="userServiceImpl" ></dubbo:service>
 		<!-- 5.服务的实现 -->
 	    <bean id="userServiceImpl" class="com.ping.service.impl.UserServiceImpl"></bean>
+	    <!-- 自动发现监控中心 -->
+	    <dubbo:monitor protocol="registry"></dubbo:monitor>
 </beans>
